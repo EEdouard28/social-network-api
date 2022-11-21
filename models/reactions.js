@@ -1,10 +1,13 @@
 const { Schema, model, Types } = require("mongoose");
-const reactionSchema = require("./reactions");
 const date = require("../utils/date");
 
-const thoughtSchema = new Schema(
+const reactionSchema = new Schema(
   {
-    thoughtText: {
+    reactionId: {
+      type: Schema.Types.ObjectId,
+      default: () => new Types.ObjectId(),
+    },
+    reactionBody: {
       type: String,
       required: true,
       minlength: 1,
@@ -20,10 +23,6 @@ const thoughtSchema = new Schema(
       type: String,
       required: true,
     },
-    reactions: [
-      //reaction schema here
-      reactionSchema,
-    ],
   },
   {
     //property exist in json data but not in database
@@ -34,11 +33,6 @@ const thoughtSchema = new Schema(
     },
   }
 );
-thoughtSchema.virtual("reactionCount").get(function () {
-  return this.reactions.length;
-});
-// User model created
-const Thought = model("Thought", thoughtSchema);
 
 //User model exported
-module.exports = Thought;
+module.exports = reactionSchema;
