@@ -21,12 +21,14 @@ module.exports = {
   //create thought
   createThought(req, res) {
     Thought.create(req.body)
-      .then(({ _id }) => {
-        return User.findOneAndUpdate(
-          { _id: req.params.userId },
-          { $push: { thoughts: _id } },
-          { new: true }
-        );
+      .then((thoughtData) => {
+        console.log(thoughtData);
+        // return User.findOneAndUpdate(
+        //   { _id: req.params.userId },
+        //   { $push: { thoughts: thoughtData._id } },
+        //   { new: true }
+        // );
+        res.status(200).json(thoughtData);
       })
       .then((thought) =>
         !thought
