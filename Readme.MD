@@ -10,6 +10,7 @@
 - [Description](#description)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Screenshot](#screenshot)
 - [License](#license)
 - [Credits](#credits)
 - [Tests](#tests)
@@ -26,6 +27,9 @@
  - Models and database are synched using MongoDB and Mongoose
  - Use  MongoDB URI mongodb://localhost:27017 and choose the database name socialDB to see thoughts and users data.
  - Create seed data and test the API routes, using Insomnia.
+ 
+ ## Screenshot
+<img width="1512" alt="Screen Shot 2022-11-22 at 7 06 07 PM" src="https://user-images.githubusercontent.com/111817163/203448860-8033b0ee-5f42-4e17-92c0-90589d2fab71.png">
 
   ## Credits
   - Evince Edouard
