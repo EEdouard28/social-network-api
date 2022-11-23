@@ -3,7 +3,7 @@
   ## Description
   We have built an API for a social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend's list. This API is built using Express.js for routing, MongoDB for its database, and the Mongoose ODM.
 
-  - Watch  the walk-through demonstration videos here: 
+  - Watch  the walk-through demonstration videos here: https://www.youtube.com/watch?v=0mVnUG6POo8
   
 
 ## Table of Contents
@@ -45,3 +45,4 @@
   ## Tests
   The API routes (USER, FRIEND, THOUGHT, REACTION) have been tested using Insomnia. Watch the walk-through demonstration video below to see it in action!
 
+  - https://www.youtube.com/watch?v=0mVnUG6POo8
